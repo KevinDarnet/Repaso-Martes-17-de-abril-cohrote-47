@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.172)),
+    url(../images/fondo-header.jpg);
+  background-size: cover;
+  color: white;
+}
+
+main {
+  min-height: 44vh;
+  /*   background: rgb(0, 31, 82);
+  background: linear-gradient(
+    27deg,
+    rgba(0, 31, 82, 1) 0%,
+    rgba(0, 191, 230, 1) 100%
+  );
+  color: white; */
+}
+#img-destacado {
+  width: 15%;
+}
+
+.libros-destacados {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+
+  min-height: 50vh;
+  border: 1px solid red;
+}
+h3 {
+  width: 50%;
+}
+.titulo-main {
+  text-align: center;
+  width: 100%;
+}
+.libros-vendidos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 1rem;
+  transition: 0.3s ease-out;
+}
+.card:hover {
+  border: 2px solid;
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+.card img {
+  width: 70%;
+}
+
+footer {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  gap: 1rem;
+}
+
+footer img {
+  width: 2rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 0.3rem;
+  border-radius: 7px;
+}
+
+/* CARTA CON ESTILO NUEVO */
+.card2 {
+  width: 25%;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  /*  overflow: visible; */
+}
+
+.card2-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card2-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.card2:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card2:hover,
+.card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
